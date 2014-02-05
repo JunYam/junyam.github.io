@@ -657,7 +657,9 @@
 	<section id="contact" name="contact"></section>
 	<div id="footwrap">
 		<div class="container desc">
-			<form id = "contactForm" name="contact_form" action="mailto:&#109;&#101;&#064;&#106;&#121;&#097;&#109;&#097;&#109;&#111;&#116;&#111;&#046;&#099;&#111;&#109;?Subject=Contact" method="post" enctype="text/plain">
+<!--			<form id = "contactForm" name="contact_form" action="mailto:&#109;&#101;&#064;&#106;&#121;&#097;&#109;&#097;&#109;&#111;&#116;&#111;&#046;&#099;&#111;&#109;?Subject=Contact" method="post" enctype="text/plain"> 
+-->
+			<form id="contactForm" name="sentMessage">
 			  	<div class="row">
 			  		<div class="col-lg-2 col-lg-offset-1">
 						<h5>CONTACT</h5>
@@ -670,12 +672,10 @@
 			  		<div class="col-lg-2 col-lg-offset-1">
 					</div>
 					<div class="col-lg-4">
-						<label >First Name</label>
-						<input name = "FirstName" id = "inFirstName" class="form-control" type="text" placeholder="Your First Name" required>
-						<label>Last Name</label>
-						<input name = "LastName" id = "inLastName" class="form-control" type="text" placeholder="Your Last Name" required>
+						<label >Name</label>
+						<input name = "name" id = "inName" class="form-control" type="text" placeholder="Your Name" required>
 						<label>Email Address</label>
-						<input name = "Email" id = "inEmail" class="form-control" type="email" placeholder="Your email address" required>
+						<input name = "Email" id = "inEmail" class="form-control" type="email" placeholder="Your email address" required><br />
 						<label>Subject
 
 						<select id="subject" name="subject" class="form-control" required>
@@ -693,6 +693,12 @@
 
 					</div>
 				</div><!--/.row -->
+				<div class = "row">
+			  		<div class="col-lg-2 col-lg-offset-1">
+					</div>
+					<div class="col-lg-6" id="success">
+					</div>
+				</div>
 			</form>
 			<div class ="row">
 				<div class="col-lg-2 col-lg-offset-1">
@@ -721,5 +727,6 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/bootstrap.js"></script>
+    <script src="./js/contact_me.js"></script>
   </body>
 </html>
